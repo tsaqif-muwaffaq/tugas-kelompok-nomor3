@@ -1,0 +1,42 @@
+Nama-nama anggota dan peran:
+- Wafa (Fitur Home, Review)
+- Xena (Fitur Form Kontak)
+- Yusuf (Fitur About Us, Review)
+
+Daftar fitur dan nama branch:
+- Home Page: branch fitur-home
+- Form Kontak: branch fitur-form-kontak
+- About Us: branch fitur-about
+
+Link Pull Request:
+- PR Fitur Home: https://github.com/user/tugas-kelompok-3/pull/1
+- PR Form Kontak: https://github.com/user/tugas-kelompok-3/pull/2
+- PR About Us: https://github.com/user/tugas-kelompok-3/pull/3
+
+Contoh pesan commit sesuai konvensi:
+- feat: tambah halaman home
+- feat: tambahkan halaman about us
+
+Penjelasan konflik merge:
+- Terjadi konflik pada file index.html antara branch fitur-home dan fitur-about.
+- Diselesaikan dengan manual merge, mempertahankan bagian home dan menambahkan section about.
+
+Output git log --oneline --graph --all:
+*   123abcd (HEAD -> main) Merge branch 'fitur-about'
+|| * 456efgh (fitur-about) feat: tambahkan halaman about us
+* | 789ijkl (fitur-form-kontak) feat: tambahkan form kontak
+|/
+* abcdef1 (fitur-home) feat: tambah halaman home
+
+Output git branch -r:
+origin/main
+origin/fitur-home
+origin/fitur-form-kontak
+origin/fitur-about
+
+Output git show (contoh commit penting):
+commit 456efgh
+Author: Yusuf <yusuf@example.com>
+Date:   Thu Aug 21 10:00:00 2025 +0700
+
+    feat: tambahkan halaman about us
